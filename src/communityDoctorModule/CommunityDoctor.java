@@ -32,13 +32,13 @@ public class CommunityDoctor {
 
     public void menu(){
         Main.clearScreen();
-        Scanner sc = new Scanner(System.in);
+        Scanner in = new Scanner(System.in);
         Main.template();
         System.out.println("     1. Refer A Patient\n" +
                            "     2. Discharge A Patient\n\n" +
                            "     0. Logout");
         System.out.print("\n     Choose an option: ");
-        int option = sc.nextInt();
+        int option = in.nextInt();
         if(option == 1) {
             referPatient();
             menu();
@@ -53,7 +53,7 @@ public class CommunityDoctor {
     }
     public static int showCommunityDoctor(){
 
-        //Main.template();
+        Main.template();
         int cnt = 0;
         System.out.println("\n    Community doctor list: (DoctorId, Name, Specialist, Number)");
         for(CommunityDoctor i : communityDoctor){
@@ -65,19 +65,19 @@ public class CommunityDoctor {
 
     public void referPatient(){
         Main.clearScreen();
-        Scanner sc = new Scanner(System.in);
+        Scanner in = new Scanner(System.in);
         if(Patient.showPatient() != 0) {
             System.out.print("\n     Enter 'patientId' for refer: ");
-            int index = sc.nextInt();
+            int index = in.nextInt();
             Patient patient = Patient.patient.get(index);
             System.out.print("\n     Enter reason for admission: ");
-            String reason = sc.next();
+            String reason = in.next();
             patient.setReasonForAdmission(reason);
             patient.setStatus("Active");
             patient.setDateOfAdmission(new Date());
             HospitalDoctor.showHospitalDoctor();
             System.out.print("\n     Enter hospital 'DoctorId' to refer: ");
-            int index2 = sc.nextInt();
+            int index2 = in.nextInt();
             patient.setHospitalDoctor(HospitalDoctor.hospitalDoctor.get(index2));
             System.out.println("\n     Patient refers to hospital doctor successfully.");
         }
@@ -88,13 +88,13 @@ public class CommunityDoctor {
 
     public void dischargePatient(){
         Main.clearScreen();
-        Scanner sc = new Scanner(System.in);
+        Scanner in = new Scanner(System.in);
         if(Patient.showTreatedPatient() != 0) {
             System.out.print("\n     Enter 'PatientId' for Discharge: ");
-            int index = sc.nextInt();
+            int index = in.nextInt();
             Patient patient = Patient.patient.get(index);
             System.out.print("\n     Enter reason for discharge: ");
-            String reason = sc.next();
+            String reason = in.next();
             patient.setReasonForDischarge(reason);
             patient.setDateOfDischarge(new Date());
             patient.setStatus("dischhargeed");

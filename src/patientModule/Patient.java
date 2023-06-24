@@ -38,6 +38,18 @@ public class Patient {
         id++;
     }
 
+    public static int showAllPatient() {
+        int cnt = 0;
+        System.out.println("\n     Patients list: (PatientId, Name, Address, DateOfBirth, Number)");
+        System.out.println("-----------------------------------------------------------------------------------------------------------------------------------------");
+        for(Patient i: patient) {
+            cnt++;
+            System.out.println("    |  " + i.getPatientId() + "  |  " + i.getName() + "  |  " + i.getAddress() + "  |  " + i.getDateOfBirth() + "  |  "
+                    + i.getPatientNumber() + "  |  ");
+        }
+        return cnt;
+    }
+
     public static int showPatient(){
 
         //Main.clearScreen();
