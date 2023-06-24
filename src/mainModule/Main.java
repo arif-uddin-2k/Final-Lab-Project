@@ -1,7 +1,6 @@
-package outModule;
+package mainModule;
 
-import mainModule.*;
-import subModule.*;
+import hospitalDoctorModule.*;
 import java.util.Scanner;
 
 public class Main {

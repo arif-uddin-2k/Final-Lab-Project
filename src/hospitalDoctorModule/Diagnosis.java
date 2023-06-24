@@ -1,6 +1,6 @@
-package subModule;
+package hospitalDoctorModule;
 
-import outModule.Main;
+import mainModule.Main;
 
 import java.util.ArrayList;
 
