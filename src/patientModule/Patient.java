@@ -1,11 +1,11 @@
-package mainModule;
+package patientModule;
 
-import outModule.Main;
-import outModule.PatientInfo;
-import subModule.Diagnosis;
+import mainModule.*;
+import hospitalDoctorModule.*;
 
 import java.util.ArrayList;
 import java.util.Date;
+
 public class Patient {
 
     private int patientId;
@@ -34,13 +34,13 @@ public class Patient {
         this.address = address;
         this.dateOfBirth = dateOfBirth;
         this.patientNumber = patientNumber;
-
+        this.status = "newPatient";
         id++;
     }
 
     public static int showPatient(){
 
-        Main.clearScreen();
+        //Main.clearScreen();
         int cnt = 0;
         System.out.println("\n     Patients list: (PatientId, Name, Address, DateOfBirth, Number)");
         System.out.println("-----------------------------------------------------------------------------------------------------------------------------------------");
@@ -55,7 +55,7 @@ public class Patient {
     }
 
     public static int showActivePatient(){
-        Main.clearScreen();
+        //Main.clearScreen();
         int cnt = 0;
         System.out.println("\n     Active patient list:(PatientId, Name, Address, DateOfBirth, Number, ReasonForAdmission, DateOfAdmission)");
         System.out.println("-----------------------------------------------------------------------------------------------------------------------------------------");
@@ -69,7 +69,7 @@ public class Patient {
         return cnt;
     }
     public static int showTreatablePatient(){
-        Main.clearScreen();
+        //Main.clearScreen();
         int cnt = 0;
         System.out.println("\n     Treatable patient list:(PatientId, Name, Address, DateOfBirth, Number, ReasonForAdmission, DiagnosisTitle, DateOfAdmission)");
         System.out.println("-----------------------------------------------------------------------------------------------------------------------------------------");
@@ -86,7 +86,7 @@ public class Patient {
 
     public static int showTreatedPatient(){
 
-        Main.clearScreen();
+        //Main.clearScreen();
         int cnt = 0;
         System.out.println("\n     Treated patient list: (PatientId, Name, Address, DateOfBirth, Number)");
         System.out.println("-----------------------------------------------------------------------------------------------------------------------------------------\n");

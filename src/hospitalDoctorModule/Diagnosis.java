@@ -1,6 +1,6 @@
 package hospitalDoctorModule;
 
-import mainModule.Main;
+import mainModule.*;
 
 import java.util.ArrayList;
 
@@ -22,7 +22,7 @@ public class Diagnosis {
 
     public static int showDiagnosis(){
 
-        Main.clearScreen();
+        //Main.clearScreen();
         int cnt = 0;
         System.out.println("\n     Diagnosis list: (DiagnosisCode, DiagnosisTitle)");
         System.out.println("-----------------------------------------------------------------------------------------------------------------------------------------");

@@ -1,6 +1,10 @@
 package mainModule;
 
+import adminModule.*;
+import communityDoctorModule.*;
 import hospitalDoctorModule.*;
+import patientModule.*;
+
 import java.util.Scanner;
 
 public class Main {

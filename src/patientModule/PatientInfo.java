@@ -1,6 +1,4 @@
-package outModule;
-
-import mainModule.Patient;
+package patientModule;
 
 import java.io.File;
 import java.io.FileWriter;

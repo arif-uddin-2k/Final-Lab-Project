@@ -1,6 +1,6 @@
-package subModule;
+package hospitalDoctorModule;
 
-import outModule.Main;
+import mainModule.*;
 
 import java.util.ArrayList;
 
@@ -22,7 +22,7 @@ public class Medication {
 
     public static int showMedication(){
 
-        Main.clearScreen();
+        //Main.clearScreen();
         int cnt = 0;
         System.out.println("\n     Medication list: (DrugId, DrugName)");
         System.out.println("-----------------------------------------------------------------------------------------------------------------------------------------");

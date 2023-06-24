@@ -1,6 +1,4 @@
-package subModule;
-
-import outModule.Main;
+package hospitalDoctorModule;
 
 import java.util.ArrayList;
 
@@ -18,7 +16,7 @@ public class Surgery {
     }
 
     public static int showSurgery(){
-        Main.clearScreen();
+        //Main.clearScreen();
         int cnt = 0;
         System.out.println("\n     Surgery list: (SurgeryCode, SurgeryTitle)");
         System.out.println("-----------------------------------------------------------------------------------------------------------------------------------------");

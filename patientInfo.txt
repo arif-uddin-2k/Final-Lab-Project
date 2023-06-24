@@ -1,0 +1,21 @@
+-----------------------------------------------------------------------------------------------------------------------------------------
+                                                        EverCare Hospital Limited                                                        
+                                                         (Patient Prescription )                                                         
+-----------------------------------------------------------------------------------------------------------------------------------------
+     Patient Id           : 1                          Admitted Reason: fever         
+     Patient Name         : Arif                          Admitted Date:                                             
+     Patient Address      : Rajshahi                          Sat Jun 24 09:10:49 UTC 2023                                 
+     Patient DateOfBirth  : 28/05/2023                          Discharge Reason: recover        
+     Patient Number       : 01762786263                          Discharge Date:                                            
+                                                                              Sat Jun 24 09:13:59 UTC 2023                                  
+     Given diagnosis: 
+         CT Scan
+     Given medication:
+         Paracitamal
+     Given surgery:
+         General Surjery
+     Prescribed by:
+         Moin
+         Neuro Sergen
+         01887394893
+-----------------------------------------------------------------------------------------------------------------------------------------

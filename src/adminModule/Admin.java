@@ -1,7 +1,9 @@
 package adminModule;
 
 import hospitalDoctorModule.*;
-import adminModule.*;
+import patientModule.*;
+import communityDoctorModule.*;
+import mainModule.*;
 
 import java.util.Scanner;
 
