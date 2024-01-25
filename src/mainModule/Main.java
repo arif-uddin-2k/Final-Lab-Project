@@ -62,7 +62,6 @@ public class Main {
         }
     }
 
-    //system run from here
     public static void main(String[] args) {
 
         Patient.patient.add(new Patient("Shafin", "Rajshahi", "04/06/2023", "01762786263"));
